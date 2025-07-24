@@ -6,12 +6,15 @@
 npm install
 ```
 
-Prepare .env file
+Create `.env` file base on `.env.example`.
 
-Move PNG images and JSON files to directories
+Save PNG images to `images` directory.
+
+Save JSON files with similar names to `metadata` directory (optional). Otherwise, the program will
+use `template.json` file for each image.
 
 ## Program run
 
 ```
-node mint.js
+npm start
 ```
