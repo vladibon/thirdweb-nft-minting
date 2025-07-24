@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
-import jsonTemplate from './template.json' with { type: 'json' };
+import jsonTemplate from './metadata/template.json' with { type: 'json' };
 dotenv.config();
 
 const { PRIVATE_KEY, THIRDWEB_SECRET_KEY, CONTRACT_ADDRESS } = process.env;
@@ -49,8 +49,8 @@ async function main() {
   console.log('Uploaded metadata to IPFS:', metadata.length, metadata);
 
   // Mint NFTs
-  const tx = await contract.erc721.mintBatch(metadata);
-  console.log('Minted NFTs:', tx.length, tx);
+  // const tx = await contract.erc721.mintBatch(metadata);
+  // console.log('Minted NFTs:', tx.length, tx);
 }
 
 main().catch(console.error);
