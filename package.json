@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@thirdweb-dev/sdk": "^4.0.99",
+    "dotenv": "^17.2.0",
+    "ethers": "^5.8.0"
+  }
+}
