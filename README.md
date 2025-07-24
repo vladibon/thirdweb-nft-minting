@@ -6,9 +6,9 @@
 npm install
 ```
 
-### Prepare .env file
+Prepare .env file
 
-### Move PNG images and JSON file to directories
+Move PNG images and JSON files to directories
 
 ## Program run
 

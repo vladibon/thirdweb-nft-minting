@@ -18,7 +18,7 @@ async function main() {
   const batch = [];
 
   for (let i = 1; i <= Number(NFT_AMOUNT); i++) {
-    const filename = String(i).padStart(3, '0');
+    const filename = String(i).padStart(4, '0');
     const jsonData = JSON.parse(fs.readFileSync(`./metadata/${filename}.json`));
 
     jsonData.image = fs.readFileSync(`./images/${filename}.png`);
