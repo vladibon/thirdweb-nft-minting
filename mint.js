@@ -49,8 +49,8 @@ async function main() {
   console.log('Uploaded metadata to IPFS:', metadata.length, metadata);
 
   // Mint NFTs
-  // const tx = await contract.erc721.mintBatch(metadata);
-  // console.log('Minted NFTs:', tx.length, tx);
+  const tx = await contract.erc721.mintBatch(metadata);
+  console.log('Minted NFTs:', tx.length, tx);
 }
 
 main().catch(console.error);
