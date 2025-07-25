@@ -6,12 +6,12 @@
 npm install
 ```
 
-Create `.env` file base on `.env.example`.
+Create `.env` file based on `.env.example`.
 
 Save PNG images to `images` directory.
 
-Save JSON files with similar names to `metadata` directory (optional). Otherwise, the program will
-use `template.json` file for each image.
+Save JSON files with corresponding names to the `metadata` directory (optional). <br>Otherwise, the
+program will use `template.json` file for each image.
 
 ## Program run
 
